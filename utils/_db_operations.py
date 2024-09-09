@@ -14,7 +14,7 @@ salt = os.getenv('SALT')
 # Create a connection pool
 connection_pool = pool.SimpleConnectionPool(
     1,  # Minimum number of connections in the pool
-    10,  # Maximum number of connections in the pool
+    80,  # Maximum number of connections in the pool
     connection_string
 )
 
